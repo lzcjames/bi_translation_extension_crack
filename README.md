@@ -7,6 +7,11 @@ A bilingual translation chrome extension
 此项目包含其旧版源码，并且做了一些本人的菜鸡改动，把使用的限制次数给冻结了。
 
 ## 为啥要改
-因为新版的要会员才可以用
+因为新版的要会员才可以用。
 
+## How to install
+- Copy the folder downloaded `1.2.13_0` to 
+  - C:\Users\xxxx\AppData\Local\Google\Chrome\User Data\Default\Extensions\jmpepeebcbihafjjadogphmbgiffiajh\
+- 打开Chrome设置->扩展程序->打开开发者模式->加载已解压的扩展程序
+  - 选择 C:\Users\xxxx\AppData\Local\Google\Chrome\User Data\Default\Extensions\jmpepeebcbihafjjadogphmbgiffiajh\1.2.13_0
 

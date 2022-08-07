@@ -1091,6 +1091,8 @@
 		d.prototype.view = function() {
 			var e = this.config,
 				t = o.createElement("div");
+            console.log("e : ");
+			console.log(e);
 			this.id = t.id = f[0] + l, t.setAttribute("class", f[0] + " " + f[0] + (e.type || 0)), t.setAttribute("index", l);
 			var n, r = (n = "object" == typeof e.title, e.title ? '<h3 style="' + (n ? e.title[1] : "") + '">' + (n ? e.title[0] : e.title) + "</h3>" : ""),
 				i = function() {
@@ -11452,8 +11454,14 @@
 						skin: "msg",
 						time: 5
 					}), new Error("PageAuth Error", e);
-					var r, i, o = JSON.parse(n.data),
+					// 原来的JSON内容为n.data，它包含了剩余次数rc和auth_type
+					// 强制更改为静态的JSON，这样就可以不受次数限制使用此插件了
+					const json = '{"rc": 0, "page_id": 1805, "is_faved": false, "auth_type": 3}';
+					// var r, i, o = JSON.parse(n.data),
+					var r, i, o = JSON.parse(json),
 						a = o.auth_type;
+						console.log("JSON at line 11468");
+						console.log(o);
 					0 == o.rc ? a >= 0 && (f.open({
 						className: _,
 						content: E,

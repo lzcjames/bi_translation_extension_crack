@@ -2795,7 +2795,8 @@
 				let n = JSON.parse(r);
 				if (n.cookies && n.cookies.cy_user) {
 					let t = JSON.parse(decodeURIComponent(n.cookies.cy_user));
-					if (t.is_login) return M = t._id, x = t.token, Y = M, void e()
+					// 更改条件，让其执行，这样就不用登录了
+					if (!t.is_login) return M = t._id, x = t.token, Y = M, void e()
 				}
 				browser.tabs.sendMessage(T, {
 					type: "alert",
@@ -2851,7 +2852,8 @@
 				let t = JSON.parse(e);
 				if (t.cookies && "" == M && t.cookies.cy_user) {
 					let e = JSON.parse(decodeURIComponent(t.cookies.cy_user));
-					e.is_login && (M = e._id, x = e.token, Y = M)
+					// 更改条件，让其执行，这样就不用登录了
+					!e.is_login && (M = e._id, x = e.token, Y = M)
 				}
 			}).catch(e => {
 				r({
