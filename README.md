@@ -10,8 +10,9 @@ A bilingual translation chrome extension
 因为新版的要会员才可以用。
 
 ## How to install
-- Copy the folder downloaded `1.2.13_0` to 
+- 把下载好的文件夹 `1.2.13_0` 复制到以下路径:  (如果没有`jmpepeebcbihafjjadogphmbgiffiajh`文件夹就创建它)
   - C:\Users\xxxx\AppData\Local\Google\Chrome\User Data\Default\Extensions\jmpepeebcbihafjjadogphmbgiffiajh\
-- 打开Chrome设置->扩展程序->打开开发者模式->加载已解压的扩展程序
+  
+- 打开Chrome, 设置->扩展程序->打开开发者模式->加载已解压的扩展程序
   - 选择 C:\Users\xxxx\AppData\Local\Google\Chrome\User Data\Default\Extensions\jmpepeebcbihafjjadogphmbgiffiajh\1.2.13_0
 
